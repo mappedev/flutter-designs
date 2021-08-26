@@ -39,21 +39,20 @@ class TitleSection extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       child: Row(
         children: [
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Oeschinen Lake Campground',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-                Text(
-                  'Kandersteg, Switzerland',
-                  style: TextStyle(color: Colors.black45),
-                ),
-              ],
-            ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Oeschinen Lake Campground',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              Text(
+                'Kandersteg, Switzerland',
+                style: TextStyle(color: Colors.black45),
+              ),
+            ],
           ),
+          Expanded(child: Container()),
           Icon(Icons.star, color: Colors.red),
           Text('41'),
         ],
@@ -85,7 +84,8 @@ class CustomButton extends StatelessWidget {
   final IconData icon;
   final String text;
 
-  const CustomButton({ Key? key,
+  const CustomButton({
+    Key? key,
     required this.icon,
     required this.text,
   }) : super(key: key);
