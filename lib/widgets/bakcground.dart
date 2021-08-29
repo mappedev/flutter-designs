@@ -20,7 +20,7 @@ class Background extends StatelessWidget {
       height: double.infinity,
       decoration: boxDecoration,
       child: Align(
-        alignment: Alignment(-3, -1.35),
+        alignment: Alignment(-3, -1.5),
         child: Transform.rotate(
           angle: -35 * pi / 180,
           child: Container(

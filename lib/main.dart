@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: 'home_screen',
+      theme: ThemeData.dark(),
       routes: {
         'basic_design': (_) => BasicDesignScreen(),
         'scroll_design': (_) => ScrollDesignScreen(),

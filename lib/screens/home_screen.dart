@@ -12,11 +12,11 @@ class HomeScreen extends StatelessWidget {
         children: [
           // Fondo
           Background(),
-
           // Cuerpo
           _HomeBody(),
         ],
       ),
+      bottomNavigationBar: CustomBottomNavigationBar(),
     );
   }
 }
@@ -30,9 +30,9 @@ class _HomeBody extends StatelessWidget {
       child: Column(
         children: [
           // Títulos
-          PageTitle()
-
-
+          PageTitle(),
+          // Tabla de tarjetas
+          CardTable(),
         ],
       ),
     );
