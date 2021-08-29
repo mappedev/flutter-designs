@@ -92,20 +92,23 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Icon(
-          icon,
-          color: Colors.blue,
-        ),
-        SizedBox(height: 4),
-        Text(
-          text,
-          style: TextStyle(
+    return GestureDetector(
+      onTap: () => Navigator.pushNamed(context, 'scroll_design'),
+      child: Column(
+        children: [
+          Icon(
+            icon,
             color: Colors.blue,
           ),
-        )
-      ],
+          SizedBox(height: 4),
+          Text(
+            text,
+            style: TextStyle(
+              color: Colors.blue,
+            ),
+          )
+        ],
+      ),
     );
   }
 }

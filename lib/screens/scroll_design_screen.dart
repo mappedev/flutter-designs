@@ -113,7 +113,7 @@ class Page2 extends StatelessWidget {
       color: Color(0xff45bad9),
       child: Center(
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: () => Navigator.pushNamed(context, 'home_screen'),
           style: ElevatedButton.styleFrom(
             primary: Color(0xff0098FA),
             shape:
